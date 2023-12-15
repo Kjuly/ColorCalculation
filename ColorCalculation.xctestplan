@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "FFEF6B4B-E994-45C2-8751-6E497B15F8A9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:ColorCalculation.xcodeproj",
+          "identifier" : "7FE6531C2B26F6450070D0D4",
+          "name" : "ColorCalculation"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ColorCalculation.xcodeproj",
+        "identifier" : "7FE653262B26F6460070D0D4",
+        "name" : "ColorCalculationTests"
+      }
+    }
+  ],
+  "version" : 1
+}
