@@ -101,29 +101,5 @@ final class UIColor_HexTests: XCTestCase {
     XCTAssertEqual(UIColor().hex, 0x000000)
   }
   #endif
-
-  // MARK: - Tests for UIColorObjC
-
-  //
-  // static UIColorObjC.makeWithHex(_:)
-  //
-  func testUIColorObjCMakeWithHex() throws {
-    XCTAssertEqual(UIColorObjC.makeWithHex(0x000000), UIColor(red: 0, green: 0, blue: 0, alpha: 1))
-    XCTAssertEqual(UIColorObjC.makeWithHex(0xFF0000), UIColor(red: 1, green: 0, blue: 0, alpha: 1))
-    XCTAssertEqual(UIColorObjC.makeWithHex(0x00FF00), UIColor(red: 0, green: 1, blue: 0, alpha: 1))
-    XCTAssertEqual(UIColorObjC.makeWithHex(0x0000FF), UIColor(red: 0, green: 0, blue: 1, alpha: 1))
-    XCTAssertEqual(UIColorObjC.makeWithHex(0xFFFFFF), UIColor(red: 1, green: 1, blue: 1, alpha: 1))
-  }
-
-  //
-  // static UIColorObjC.makeWithHex(_:alpha:)
-  //
-  func testUIColorObjCMakeWithHexAndAlpha() throws {
-    XCTAssertEqual(UIColorObjC.makeWithHex(0x000000, alpha: 0.3), UIColor(red: 0, green: 0, blue: 0, alpha: 0.3))
-    XCTAssertEqual(UIColorObjC.makeWithHex(0xFF0000, alpha: 0.4), UIColor(red: 1, green: 0, blue: 0, alpha: 0.4))
-    XCTAssertEqual(UIColorObjC.makeWithHex(0x00FF00, alpha: 0.5), UIColor(red: 0, green: 1, blue: 0, alpha: 0.5))
-    XCTAssertEqual(UIColorObjC.makeWithHex(0x0000FF, alpha: 0.6), UIColor(red: 0, green: 0, blue: 1, alpha: 0.6))
-    XCTAssertEqual(UIColorObjC.makeWithHex(0xFFFFFF, alpha: 0.7), UIColor(red: 1, green: 1, blue: 1, alpha: 0.7))
-  }
 }
 #endif
