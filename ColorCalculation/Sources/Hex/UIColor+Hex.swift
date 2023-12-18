@@ -38,4 +38,18 @@ extension UIColor: ColorHexProtocol {
   }
   #endif
 }
+
+// MARK: - ObjC
+
+@objcMembers
+public class UIColorObjC: NSObject {
+
+  public static func makeWithHex(_ hex: Int32) -> UIColor {
+    return UIColor(hex: hex, alpha: 1)
+  }
+
+  public static func makeWithHex(_ hex: Int32, alpha: CGFloat) -> UIColor {
+    return UIColor(hex: hex, alpha: alpha)
+  }
+}
 #endif
