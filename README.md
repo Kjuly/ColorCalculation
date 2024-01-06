@@ -36,6 +36,15 @@ uiColor.hex
 nsColor.hex
 ```
 
+An extension to String is also provided to get hex values in Int32.
+
+```swift
+// Below all are valid and returns 0xFFFFFF.
+"FFFFFF".toColorHex
+"#FFFFFF".toColorHex
+"0xFFFFFF".toColorHex
+```
+
 ## Color Brightness Usage
 
 Get to know a color is bright or dark. 
