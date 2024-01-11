@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ColorCalculation"
-  spec.version      = "1.0.0"
+  spec.version      = "1.1.0"
   spec.summary      = "A color extension library for calculating hex, brightness, etc."
   spec.license      = "MIT"
   spec.source       = { :git => "https://github.com/Kjuly/ColorCalculation.git", :tag => spec.version.to_s }
