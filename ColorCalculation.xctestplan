@@ -21,7 +21,7 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
+      "parallelizable" : false,
       "target" : {
         "containerPath" : "container:ColorCalculation.xcodeproj",
         "identifier" : "7FE653262B26F6460070D0D4",
