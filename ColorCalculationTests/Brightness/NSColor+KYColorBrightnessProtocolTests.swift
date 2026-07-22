@@ -27,7 +27,7 @@ final class NSColor_ColorBrightnessProtocolTests: XCTestCase {
   //
   // static ColorBrightnessProtocol.isBrightColorInHex(_:)
   //
-  func testisIsBrightColorInHex() {
+  func testIsBrightColorInHex() {
     XCTAssertEqual(NSColor.isBrightColorInHex(0x000000), false)
     XCTAssertEqual(NSColor.isBrightColorInHex(0xFFFFFF), true)
 
@@ -65,7 +65,7 @@ final class NSColor_ColorBrightnessProtocolTests: XCTestCase {
   //
   // ColorBrightnessProtocol.getter:isBrightColor
   //
-  func testisIsBrightColor() {
+  func testIsBrightColor() {
     XCTAssertEqual(NSColor.makeWithHex(0x000000).isBrightColor, false)
     XCTAssertEqual(NSColor.makeWithHex(0xFFFFFF).isBrightColor, true)
 

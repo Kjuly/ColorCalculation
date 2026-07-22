@@ -148,7 +148,7 @@ final class ColorRGBTests: XCTestCase {
   //
   // ColorRGB.isBrightColor()
   //
-  func testisIsBrightColor() {
+  func testIsBrightColor() {
     XCTAssertEqual(ColorRGB(from: 0x000000).isBrightColor(), false)
     XCTAssertEqual(ColorRGB(from: 0xFFFFFF).isBrightColor(), true)
 
